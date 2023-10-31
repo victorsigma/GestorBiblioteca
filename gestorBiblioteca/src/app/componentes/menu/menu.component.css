@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de logo */
+.navbar-brand{
+    margin-bottom: -2.5%;
+    margin-left: 2%;
+}
+
+/* Estilos de barra de arriba */
+.container-fluid{
+    background-color: #2A4DBD;
+    z-index: 1;
+    position: absolute;
+    margin-bottom: -3%;
+    height: 1000%;
+}
+
+/* Estilo para el efecto hover en los elementos del menú desplegable */
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #00796B; /* Cambia este color al que desees para el fondo del elemento hover */
+    color: white; /* Cambia este color al que desees para el texto del elemento hover */
+}

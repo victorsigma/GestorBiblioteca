@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="actualizar-libro.component.css">
+    <title>Actualizar libro</title>
+</head>
+<body>
+  <h1>Actualizar/Eliminar libro</h1><br><br><br>
+  <form action="/buscar">
+      <i class="fa-solid fa-magnifying-glass"></i><input class="barra" type="share" name="" placeholder="Buscar">
+      <input class="btnBuscar" type="submit" value="Buscar"><br><br><br>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Autor(es)</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Fecha de publicación</th>
+        <th scope="col">Editorial</th>
+        <th scope="col">Cant. ejemplares</th>
+        <th scope="col">Categoría</th>
+        <th scope="col" style="width: 5%;">Actualizar</th>
+        <th scope="col" style="width: 5%;">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let Libro of libros">
+      <tr>
+        <td>{{Libro.titulo}}</td>
+        <td>{{Libro.autores}}</td>
+        <td>{{Libro.ISBN}}</td>
+        <td>{{Libro.fPublicacion}}</td>
+        <td>{{Libro.editorial}}</td>
+        <td>{{Libro.cantEjemplares}}</td>
+        <td>{{Libro.categoria}}</td>
+        <td><button style="background-color: white; border: none;"><i class="fa-solid fa-pen-to-square" style="color: #0042aa;"></i></button></td>
+        <td><button style="background-color: white; border: none;"><i class="fa-solid fa-trash" id="{{Libro.ISBN}}" style="color: #e32402;"></i></button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
