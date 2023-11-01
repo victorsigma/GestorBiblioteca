@@ -12,6 +12,7 @@ import { AltaPrestamoComponent } from './componentes/alta-prestamo/alta-prestamo
 import { ActualizarPrestamoComponent } from './componentes/actualizar-prestamo/actualizar-prestamo.component';
 import { TerminarPrestamoComponent } from './componentes/terminar-prestamo/terminar-prestamo.component';
 import { GestionEjemplaresComponent } from './componentes/gestion-ejemplares/gestion-ejemplares.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { GestionEjemplaresComponent } from './componentes/gestion-ejemplares/ges
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

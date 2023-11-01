@@ -47,7 +47,7 @@ app.post('/api/libros', (req, res) => {
         editorial: req.body.editorial,
         cantEjemplares: parseInt(req.body.cantEjemplares),
         categoria: req.body.categoria
-    };
+    };  
 
     const sQuery = "INSERT INTO Libro SET ?";
 

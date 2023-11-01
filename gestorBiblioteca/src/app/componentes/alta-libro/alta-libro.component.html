@@ -7,24 +7,35 @@
     <title>Alta libro</title>
 </head>
 <body>
-    <h1>Alta de libro</h1><br><br><br>
-    <div class="cajas">
-        <i class="fa-solid fa-book"></i><input type="text" placeholder="Nombre del libro"><br><br>
-        <i class="fa-solid fa-user-group"></i><input type="text" placeholder="Autor"><br><br>
-        <i class="fa-solid fa-barcode"></i><input type="text" placeholder="ISBN"><br><br>
-        <i class="fa-solid fa-calendar-days"></i><input type="date" placeholder="Fecha publicación">
-    </div>
-    <div class="notas">
-        <h5>Nombre del libro:</h5><br><br>
-        <h5>Autor(es):</h5><br><br>
-        <h5>ISBN:</h5><br><br>
-        <h5>Fecha publicación:</h5>
-    </div>
 
-    <div class="botones"><br><br>
-        <button class="btnCancelar">Cancelar</button>
-        <button class="btnGuardar">Guardar</button>
-    </div>
+    <h1>Alta de libro</h1>
+
+    <form class="formulario" >
+        <label for="titulo">ISBN:</label>
+        <i class="fa-solid fa-barcode"></i><input type="text" id="isbn" [(ngModel)]="ISBND" [ngModelOptions]="{standalone:true}" name="isbn" required placeholder="ISBN"> <br>
+
+        <label for="titulo">Título:</label>
+        <i class="fa-solid fa-book"></i><input type="text" id="titulo" [(ngModel)]="Titulo" name="titulo" required placeholder="Titulo"> <br>
+      
+        <label for="autores">Autores:</label>
+        <i class="fa-solid fa-user-group"></i><input type="text" id="autores" [(ngModel)]="Autores" name="autores" required placeholder="Autor(es)"> <br>
+      
+        <label for="fPublicacion">Fecha de publicación:</label>
+        <i class="fa-solid fa-calendar-days"></i><input type="text" id="fPublicacion" [(ngModel)]="fPublicacion" name="fPublicacion" required placeholder="Fecha publicación"> <br>
+      
+        <label for="editorial">Editorial:</label>
+        <i class="fa-solid fa-newspaper"></i><input type="text" id="editorial" [(ngModel)]="Editorial" name="editorial" required placeholder="Editorial"> <br>
+      
+        <label for="cantEjemplares">Cantidad de Ejemplares:</label>
+        <i class="fa-solid fa-users"></i><input type="number" id="cantEjemplares" [(ngModel)]="cantEjemplares" name="cantEjemplares" required placeholder="Cantidad ejemplares"> <br>
+
+        <label class="lCategoria" for="categoria" style="font-size: 16px;">Categoría:</label>
+            <select id="categoria" [(ngModel)]="Categoria" name="categoria" required style="width: 250px; padding: 30px 30px 30px 100px; margin: 5px; height: 58px; font-size: 80px;">
+            <option *ngFor="let categoria of categorias" [value]="categoria.nombre">{{ categoria.nombre }}</option>
+        </select> <br><br>
+      
+        <button class="btnGuardar" type="button" (click)="altaLibro()">Guardar libro</button>
+      </form> 
 
 </body>
 </html>
