@@ -1,0 +1,42 @@
+API/node_modules
+
+gestorBiblioteca
+gestorBiblioteca/dist
+gestorBiblioteca/tmp
+gestorBiblioteca/out-tsc
+gestorBiblioteca/bazel-out
+gestorBiblioteca/
+gestorBiblioteca/# Node
+gestorBiblioteca/node_modules
+gestorBiblioteca/npm-debug.log
+gestorBiblioteca/yarn-error.log
+gestorBiblioteca/
+gestorBiblioteca/# IDEs and editors
+gestorBiblioteca/.idea/
+gestorBiblioteca/.project
+gestorBiblioteca/.classpath
+gestorBiblioteca/.c9/
+gestorBiblioteca/*.launch
+gestorBiblioteca/.settings/
+gestorBiblioteca/*.sublime-workspace
+gestorBiblioteca/
+gestorBiblioteca/# Visual Studio Code
+gestorBiblioteca/.vscode/*
+gestorBiblioteca/!.vscode/settings.json
+gestorBiblioteca/!.vscode/tasks.json
+gestorBiblioteca/!.vscode/launch.json
+gestorBiblioteca/!.vscode/extensions.json
+gestorBiblioteca/.history/*
+gestorBiblioteca/
+gestorBiblioteca/# Miscellaneous
+gestorBiblioteca/.angular/cache
+gestorBiblioteca/.sass-cache/
+gestorBiblioteca/connect.lock
+gestorBiblioteca/coverage
+gestorBiblioteca/libpeerconnection.log
+gestorBiblioteca/testem.log
+gestorBiblioteca/typings
+gestorBiblioteca/
+gestorBiblioteca/# System files
+gestorBiblioteca/.DS_Store
+gestorBiblioteca/Thumbs.db
