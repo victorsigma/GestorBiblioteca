@@ -8,9 +8,9 @@
 </head>
 <body>
   <h1>Gestión de ejemplares</h1><br><br><br>
-  <form action="/buscar">
+  <form>
       <i class="fa-solid fa-magnifying-glass"></i><input #search class="barra" type="share" name="" placeholder="Buscar">
-      <button (click)="mostrarTabla">Buscar</button><br><br><br>
+      <button type="button" (click)="mostrarTabla()">Buscar</button><br><br><br>
   </form>
   <table *ngIf="visible" class="table">
     <thead>
@@ -25,7 +25,7 @@
       <tr>
         <td>{{Ejemplar.titulo}}</td>
         <td>{{Ejemplar.ISBN}}</td>
-        <td>{{Ejemplar.IdEjemplar}}</td>
+        <td>{{Ejemplar.idEjemplar}}</td>
         <td><button style="background-color: white; border: none;"><i class="fa-solid fa-trash" id="{{Ejemplar.IdEjemplar}}" style="color: #e32402;"></i></button></td>
       </tr>
     </tbody>
